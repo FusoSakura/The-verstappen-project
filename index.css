@@ -1,0 +1,98 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.nav__link {
+  margin-left: 8px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.nav__link--blue { color: #4a6eff; }
+.nav__link--gray { color: #999999; }
+.nav__link--green { color: #c8ff73; }
+
+.intro {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.mission {
+  background: #4a6eff;
+  color: white;
+  padding: 2rem;
+  font-size: 30px;
+}
+
+.about-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about {
+  background: #cccccc;
+  padding: 2rem;
+  font-size: 30px;
+}
+
+.contact {
+  background: #c8ff73;
+  padding: 2rem;
+  font-size: 30px;
+}
+
+.contact input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.dashboard {
+  padding: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+.logo{
+    font-size: 50px;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* 이미지 간격 */
+  align-items: flex-start; /* 높이 기준 정렬 */
+}
+
+.gallery img {
+  max-width: 200px;   /* 가장 작은 이미지 너비에 맞게 */
+  max-height: 150px;  /* 가장 작은 이미지 높이에 맞게 */
+  object-fit: cover;  /* 비율 유지하면서 잘라내기 */
+}

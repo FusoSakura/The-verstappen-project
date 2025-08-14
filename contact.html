@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HRAD TYRES</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1d0371 0%, #6e3ff6 100%);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-container {
+            background: rgba(30, 20, 60, 0.85);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            padding: 40px 28px;
+            margin-top: 60px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 18px;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.15em;
+            line-height: 1.7;
+        }
+        form {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        input, textarea {
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1em;
+            resize: vertical;
+        }
+        button {
+            background: #ffd700;
+            color: #1d0371;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 0;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #fff;
+            color: #6e3ff6;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 32px;
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>
+            Have a question, suggestion, or just want to say hello?<br>
+            Fill out the form below and our team will get back to you as soon as possible!
+        </p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
